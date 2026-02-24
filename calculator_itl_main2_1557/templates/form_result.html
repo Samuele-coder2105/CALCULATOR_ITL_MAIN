@@ -1,0 +1,25 @@
+<!-- Creare una pagina che restituisca i dati dell'utente -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css"> 
+    <title>Document</title>    
+</head>
+<body>
+    {% block content %}
+    <h1>Grazie per aver compilato il modulo</h1>
+    <p>Il tuo nome: {{name}}</p>
+    <p>La tua mail: {{email}}</p>
+    <p>Il tuo indirizzo: {{address}}</p>
+    <p>La tua disponibilità: {{date}}</p>
+    <p>Il tuo testo: {{text}}</p>
+    
+
+
+    {% endblock %}
+   
+</body>
+</html>
